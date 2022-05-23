@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.vehicle.VehicleFragment">
+
+    <EditText
+        android:id="@+id/etPlate"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:layout_margin="12dp"
+        android:hint="@string/plate"
+        tools:ignore="MissingConstraints"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etPersonId"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etPlate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:layout_margin="12dp"
+        android:hint="@string/identification"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tvVehicleClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonId"
+        android:text="@string/VehicleType"
+        android:padding="20dp"
+        android:layout_margin="12dp"
+        android:gravity="center_vertical"
+        />
+
+    <Spinner
+        android:id="@+id/spVehicleClass"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonId"
+        app:layout_constraintStart_toEndOf="@+id/tvVehicleClass"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_margin="12dp"
+        android:hint="@string/vehicle_class"/>
+
+    <EditText
+        android:id="@+id/etSerial"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvVehicleClass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:layout_margin="12dp"
+        android:hint="@string/VehicleSerial"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etBrand"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etSerial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:layout_margin="12dp"
+        android:hint="@string/vehicleBrand"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etColor"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etBrand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:layout_margin="12dp"
+        android:hint="@string/VehicleColor"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonVehicle"
+        android:padding="20dp"
+        android:layout_margin="12dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

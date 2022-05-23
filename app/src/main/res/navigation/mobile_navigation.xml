@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.umb.bike.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_owner"
+        android:name="com.umb.bike.ui.owner.OwnerFragment"
+        android:label="@string/menu_owner"
+        tools:layout="@layout/fragment_owner" />
+
+    <fragment
+        android:id="@+id/nav_vehicle"
+        android:name="com.umb.bike.ui.vehicle.VehicleFragment"
+        android:label="@string/menu_vehicle"
+        tools:layout="@layout/fragment_vehicle" />
+
+    <fragment
+        android:id="@+id/nav_storage"
+        android:name="com.umb.bike.ui.storage.StorageFragment"
+        android:label="@string/menu_storage"
+        tools:layout="@layout/fragment_storage" />
+
+    <fragment
+        android:id="@+id/nav_nfc"
+        android:name="com.umb.bike.ui.nfc.NfcFragment"
+        android:label="@string/menu_nfc"
+        tools:layout="@layout/fragment_nfc" />
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.umb.bike.ui.report.ReportFragment"
+        android:label="@string/menu_report"
+        tools:layout="@layout/fragment_report" />
+</navigation>

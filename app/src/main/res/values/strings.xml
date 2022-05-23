@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">bike</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Bike App</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_owner">Propietarios</string>
+    <string name="menu_vehicle">Vehiculos</string>
+    <string name="menu_storage">Almacenamiento</string>
+    <string name="menu_nfc">Asociar NFC</string>
+    <string name="menu_report">Reporte Judicial</string>
+    <string name="action_sign_in">LOGIN</string>
+    <string name="prompt_email">user</string>
+    <string name="prompt_password">password</string>
+    <string name="plate">Placa del vehiculo</string>
+    <string name="identification">Identificación</string>
+    <string name="vehicle_class">Tipo de vehiculo</string>
+    <string name="vehicleBrand">marca</string>
+    <string name="VehicleType">Tipo del vihiculo</string>
+    <string name="VehicleColor">color</string>
+    <string name="buttonVehicle">Guardar</string>
+    <string name="VehicleSerial">Serial</string>
+    <string name="readVehicle">Leer</string>
+</resources>
